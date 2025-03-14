@@ -53,6 +53,9 @@
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#executive-council">E-Council</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#pillars">Pillars</a>
           </li>
           <li class="nav-item">
@@ -120,7 +123,42 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Want to check us out? Visit us during rush this semester!</h2>
+        
+        <h2 class="featurette-heading">Want to check us out? Visit us during rush this fall!</h2>
+        <p>Our Spring 2025 Rush has ended, but stay tuned for our Fall 2025 rush next semester!</p>
+        <p>More details coming soon!</p>
+        <p>In the meantime, please direct any questions to
+          <a href="mailto:chichapterscribe@gmail.com">chichapterscribe@gmail.com</a>.
+        </p>
+
+        <h2>Countdown to Fall 2025 Rush:</h2>
+        <div id="countdown"></div>
+
+        <script>
+          var countDownDate = new Date("Sep 12, 2025 00:00:00").getTime();
+          var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = "<span class='countdown-item'>" + days + " <span>Days</span></span> " +
+            "<span class='countdown-item'>" + hours + " <span>Hours</span></span> " +
+            "<span class='countdown-item'>" + minutes + " <span>Minutes</span></span> " +
+            "<span class='countdown-item'>" + seconds + " <span>Seconds</span></span>";
+
+            if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("countdown").innerHTML = "Fall 2025 Rush has started!";
+            }
+          }, 1000);
+        </script>
+
+
+        <!-- UNDO NEXT RUSH! :)
         <p class="lead">Bring your resume and come to any of our rush events! Events listed will be held at the <strong>Chapter House</strong> at <strong>1030 N Martin Ave, Tucson, AZ 85719</strong>, <i>unless specified otherwise</i>. For questions, contact Tanay Desai at (571) 473-6314. <br>Here are our events:</p>
         <ul style="list-style-type:disc;">
           <li>Monday     2/3:  Info Meeting @ <strong>Old Engineering Building, Room 304</strong>,  6:30pm</li>
@@ -130,7 +168,9 @@
           <li>Friday     2/7:  Interview Night     @ 7pm</li>
         </ul>
         <p class="lead">Click the button below to fill out our interest form.</p>
+
         <p><a class="btn btn-lg btn-danger" href="https://docs.google.com/forms/d/e/1FAIpQLSdPaI11fM8meliCL3B1DeWTdUY0tAv949-bn1VJ-ZxxicouWA/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link" role="button">Join Today!</a></p>
+      -->
       </div>
       <div class="col-md-5 order-md-1">
         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image mx-auto" style="height: 450px;" src="images/rushSpring19.jpg" alt="Rush Spring 2019">
@@ -151,6 +191,71 @@
         <img id="coatOfArms" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="images/ThetaTauLogo2.png" alt="Theta Tau Coat of Arms">
       </div>
     </div>
+
+    <!-- ECOUNCIL! -->
+  <hr id="executive-council" class="featurette-divider">
+  <div class="container">
+    <h2 class="text-center featurette-heading">Meet Our <span class="text-muted">Executive Council</span></h2>
+    <p class="lead text-center">Our E-Council is dedicated to leading Chi Chapter with integrity, professionalism, and a commitment to our values.</p>
+
+    <div class="row">
+      <!-- Regent -->
+      <div class="col-md-4 text-center">
+        <img class="rounded-circle" src="images/natalie.png" alt="Regent" style="width: 200px; height: 200px; object-fit: cover;">
+        <h4 class="mt-3"><strong>Natalie Franson</strong></h4>
+        <p><em>Regent</em></p>
+        <p>Fall 2023 P.C.</p>
+        <p>Sophomore, Electrical Engineering</p>
+        <p>"Hi! My name is Natalie and I am the regent for Chi Chapter. I rushed three semesters ago, and haven’t regretted one minute! Some hobbies of mine are swimming, reading and crafting. Some of my favorite memories with my Brothers has been volunteering at Habitat for Humanity, game nights, and our BBQs."</p>
+      </div>
+
+      <!-- Vice Regent -->
+      <div class="col-md-4 text-center">
+        <img class="rounded-circle" src="images/eyal.png" alt="Vice Regent" style="width: 200px; height: 200px; object-fit: cover;">
+        <h4 class="mt-3"><strong>Eyal Danielli</strong></h4>
+        <p><em>Vice Regent</em></p>
+        <p>Fall 2023 P.C.</p>
+        <p>Junior, Computer Science</p>
+        <p>"Hello, I'm Eyal, Vice Regent of Chi Chapter. In my free time, I enjoy hiking, travel, and marksmanship. As part of the Fall '23 PC, I'm currently in my third semester as an active member of the house. In the time I've spent here, I've learned a lot about what brotherhood means, such as the kind of connections that this house fosters and the unspoken bond between brothers that we all share. One of the best experiences I had with Theta Tau was at the Fall 2023 Southwest Regional Conference in San Diego."</p>
+      </div>
+
+      <!-- Scribe -->
+      <div class="col-md-4 text-center">
+        <img class="rounded-circle" src="images/bella.jpeg" alt="Scribe" style="width: 200px; height: 200px; object-fit: cover;">
+        <h4 class="mt-3"><strong>Isabella Klein</strong></h4>
+        <p><em>Scribe</em></p>
+        <p>Fall 2023 P.C.</p>
+        <p>Senior, Biomedical Engineering</p>
+        <p>"My name is Bella and I am the scribe! I rushed in Fall 2023 and have always been very active in the chapter, particularly in our philanthropy committee! Some of my favorite memories from Theta Tau are helping out the local Tucson community either through our fundraising, road clean-ups, or Habitat for Humanity. A fun fact about me is that I love music, and one of my biggest hobbies is seeing artists in concert!"</p>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <!-- Treasurer -->
+      <div class="col-md-4 text-center">
+        <img class="rounded-circle" src="images/kailey.jpeg" alt="Treasurer" style="width: 200px; height: 200px; object-fit: cover;">
+        <h4 class="mt-3"><strong>Kailey Fritz</strong></h4>
+        <p><em>Treasurer</em></p>
+        <p>Fall 2023 P.C.</p>
+        <p>Sophomore, Chemical Engineering</p>
+        <p>"Hi! My name is Kailey and I am the current Treasurer for Chi Chapter. I have been an active member of Theta Tau for a little over a year and have already made so many memories here! Some of these include the BBQs and events such as PenChi, as well as small events like movie nights! Some facts about me are that I love playing tennis and pickleball, and anything chemistry related! I can't wait to make more memories in this chapter with the other members who make being apart of Theta Tau so special!"</p>
+      </div>
+
+      <!-- Corresponding Secretary -->
+      <div class="col-md-4 text-center">
+        <img class="rounded-circle" src="images/nic.jpeg" alt="Corresponding Secretary" style="width: 200px; height: 200px; object-fit: cover;">
+        <h4 class="mt-3"><strong>Nicholas Behr</strong></h4>
+        <p><em>Corresponding Secretary</em></p>
+        <p>Fall 2021 P.C.</p>
+        <p>Senior, Software Engineering</p>
+        <p>"Hey everyone my name is Nic, I am the corresponding secretary for the chapter. I have been a part of Theta Tau for 3 years now and I have enjoyed every minute of it! A little about me is that I enjoy woodworking and all things engineering. I also like to take on projects that I can learn a lot from. One favorite memory of mine from Theta Tau was being able to attend the national convention in Lexington, Kentucky, and being able to network with brothers from around the nation and seeing how deep the brotherhood goes!"</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
 
     <hr id="pillars" class="featurette-divider">
 

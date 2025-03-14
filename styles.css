@@ -8,6 +8,33 @@ body {
   color: #5a5a5a;
 }
 
+/* Sticky Navbar */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  z-index: 1000;
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#countdown {
+  display: flex;
+  gap: 10px;
+  font-size: 1.5rem;
+}
+
+.countdown-item {
+  background: #640303;
+  color: rgb(255, 241, 116);
+  padding: 10px;
+  border-radius: 8px;
+  min-width: 80px;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
